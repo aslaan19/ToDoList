@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #202124;
+  }
+  
+  /* Stylish Font for Headings & Buttons */
+  h1,
+  h2,
+  h3,
+  input,
+  button {
+    font-family: 'Press Start 2P', system-ui;
+  }
+  
+  /* Centered Layout */
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    gap: 20px;
+  }
+  
+  /* Header - Input & Button */
+  header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 10px;
+  }
+  
+  header input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid #3b82f6;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  header input:focus {
+    border-color: #1e40af;
+    outline: none;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  }
+  
+  /* Button Styling */
+  header button {
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  header button:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+  }
+  
+  /* Main Task List */
+  .main {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  /* Individual Task Item */
+  .todoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 14px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .todoItem:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Task Text */
+  .todoItem p {
+    flex: 1;
+    font-size: 1rem;
+    color: #374151;
+  }
+  
+  /* Actions (Remove Button) */
+  .actionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .actionsContainer button {
+    padding: 8px 12px;
+    border: none;
+    background: #ef4444;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .actionsContainer button:hover {
+    background: #dc2626;
+    transform: scale(1.1);
+  }
+
+  span {
+    font-size: 1.2em;
+    color: #48df4d;
+  }
+  
+  /* Responsive Tweaks */
+  @media (min-width: 640px) {
+    header button,
+    header input {
+      font-size: 1.2em;
+    }
+  }
+  

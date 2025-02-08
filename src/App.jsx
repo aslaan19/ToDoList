@@ -22,6 +22,7 @@ function App() {
 
   return (
     <>
+    <h1> <span> KFUPM</span> To Do List</h1>
       <TodoInput handlUpdateTask={handlUpdateTask} taskvalue={taskvalue} setTaskvalue={setTaskvalue} />
       <TodoList tasks={tasks} removeTask={removeTask}/>
     </>

@@ -11,7 +11,9 @@ h1,
 h2,
 h3,
 input,
-button {
+button,
+span
+{
   font-family: 'Press Start 2P', system-ui;
 }
 
